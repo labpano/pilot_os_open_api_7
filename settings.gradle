@@ -1,0 +1,3 @@
+include ':PanoSDK'
+include ':CameraSample'
+include ':PushSDK'

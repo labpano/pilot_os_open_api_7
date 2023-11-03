@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Settings">
+
+    <PreferenceCategory android:title="模式">
+
+        <ListPreference
+            android:defaultValue="@string/mode_photo"
+            android:dialogTitle="请选择拍摄模式"
+            android:entries="@array/arrays_camera_mode"
+            android:entryValues="@array/arrays_camera_mode"
+            android:key="single_list_mode"
+            android:summary="选择拍摄模式"
+            android:title="拍摄模式" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="功能">
+
+        <ListPreference
+            android:defaultValue="@string/camera_resolution_5_7k"
+            android:dialogTitle="选择分辨率"
+            android:key="sp_camera_resolution"
+            android:summary="选择分辨率"
+            android:title="分辨率" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="switch_stabilization"
+            android:summary="是否打开我呢？"
+            android:summaryOff="防抖已关闭"
+            android:summaryOn="防抖已打开"
+            android:title="防抖" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch_steady_follow"
+            android:summaryOff="固定"
+            android:summaryOn="跟随相机"
+            android:title="防抖跟随" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch_hdr"
+            android:summaryOff="HDR已关闭"
+            android:summaryOn="HDR已打开"
+            android:title="HDR拍照" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="switch_encode"
+            android:summaryOff="H265编码"
+            android:summaryOn="H264编码"
+            android:title="编码方式" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Pro配置">
+        <ListPreference
+            android:defaultValue="@string/pro_et_auto"
+            android:dialogTitle="请选择快门速度"
+            android:entries="@array/arrays_et"
+            android:entryValues="@array/arrays_et"
+            android:key="sp_pro_et"
+            android:summary="选择快门速度"
+            android:title="快门速度" />
+        <ListPreference
+            android:defaultValue="@string/pro_ev_0"
+            android:dialogTitle="请选曝光补偿"
+            android:entries="@array/arrays_ev"
+            android:entryValues="@array/arrays_ev"
+            android:key="sp_pro_ev"
+            android:summary="选择曝光补偿"
+            android:title="曝光补偿" />
+
+        <ListPreference
+            android:defaultValue="@string/pro_wb_auto"
+            android:dialogTitle="请选择白平衡"
+            android:entries="@array/arrays_wb"
+            android:entryValues="@array/arrays_wb"
+            android:key="sp_pro_wb"
+            android:summary="选择白平衡"
+            android:title="白平衡" />
+
+        <ListPreference
+            android:defaultValue="@string/pro_iso_auto"
+            android:dialogTitle="请选ISO(手动曝光时才生效)"
+            android:entries="@array/arrays_iso"
+            android:entryValues="@array/arrays_iso"
+            android:key="sp_pro_iso"
+            android:summary="选择ISO"
+            android:title="ISO" />
+
+        <ListPreference
+            android:defaultValue="@string/pro_anti_auto"
+            android:dialogTitle="选择抗频闪"
+            android:entries="@array/arrays_pro_anti"
+            android:entryValues="@array/arrays_pro_anti"
+            android:key="sp_pro_anti"
+            android:summary="选择抗频闪"
+            android:title="抗频闪" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="平面视频">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="switch_plane_camera"
+            android:summaryOff="前摄像头"
+            android:summaryOn="后摄像头"
+            android:title="摄像头" />
+
+        <ListPreference
+            android:defaultValue="@string/pro_plane_ratio_1"
+            android:dialogTitle="选择画面比例"
+            android:entries="@array/arrays_plane_ratio"
+            android:entryValues="@array/arrays_plane_ratio"
+            android:key="sp_plane_ratio"
+            android:summary="选择画面比例"
+            android:title="画面比例" />
+
+        <ListPreference
+            android:defaultValue="@string/pro_plane_field_90"
+            android:dialogTitle="选择视场角"
+            android:entries="@array/arrays_plane_field"
+            android:entryValues="@array/arrays_plane_field"
+            android:key="sp_plane_field"
+            android:summary="选择视场角"
+            android:title="视场角" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="延时摄影">
+        <ListPreference
+            android:defaultValue="@string/timelapse_time_10"
+            android:dialogTitle="选择延时倍数"
+            android:entries="@array/arrays_timelapse_time"
+            android:entryValues="@array/arrays_timelapse_time"
+            android:key="sp_timelapse_times"
+            android:summary="选择延时倍数"
+            android:title="延时倍数" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

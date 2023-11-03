@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Settings">
+
+    <PreferenceCategory android:title="功能">
+
+        <EditTextPreference
+            android:defaultValue="@string/sp_live_url_1"
+            android:key="sp_live_url"
+            android:title="输入直播地址" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="switch_live_pano"
+            android:summaryOff="屏幕直播"
+            android:summaryOn="全景直播"
+            android:title="直播方式" />
+
+        <ListPreference
+            android:defaultValue="@string/camera_resolution_1280p"
+            android:dialogTitle="选择直播分辨率"
+            android:entries="@array/arrays_live_resolution"
+            android:entryValues="@array/arrays_live_resolution"
+            android:key="sp_live_resolution"
+            android:summary="选择直播分辨率"
+            android:title="分辨率" />
+
+        <ListPreference
+            android:defaultValue="@string/live_bitrate_8"
+            android:dialogTitle="选择码率"
+            android:entries="@array/arrays_live_bitrate1280"
+            android:entryValues="@array/arrays_live_bitrate1280"
+            android:key="sp_live_bitrate"
+            android:summary="选择码率"
+            android:title="码率" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="switch_stabilization"
+            android:summary="是否打开我呢？"
+            android:summaryOff="防抖已关闭"
+            android:summaryOn="防抖已打开"
+            android:title="防抖" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch_steady_follow"
+            android:summaryOff="固定"
+            android:summaryOn="跟随相机"
+            android:title="防抖跟随" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="switch_encode"
+            android:summaryOff="H265编码"
+            android:summaryOn="H264编码"
+            android:title="编码方式" />
+
+        <ListPreference
+            android:defaultValue="@string/pro_plane_ratio_1"
+            android:dialogTitle="选择屏幕直播画面比例"
+            android:entries="@array/arrays_plane_ratio"
+            android:entryValues="@array/arrays_plane_ratio"
+            android:key="sp_live_ratio"
+            android:summary="选择画面比例"
+            android:title="屏幕直播-画面比例" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="存储">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch_live_record"
+            android:summaryOff="不保存"
+            android:summaryOn="保存录像"
+            android:title="是否保存直播(15Mbps以下)" />
+
+        <ListPreference
+            android:defaultValue="@string/video_split_5"
+            android:dialogTitle="分段存储(分钟)"
+            android:entries="@array/arrays_video_split"
+            android:entryValues="@array/arrays_video_split"
+            android:key="sp_live_split"
+            android:summary="分段存储"
+            android:title="分段存储" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Pro配置">
+        <ListPreference
+            android:defaultValue="@string/pro_et_auto"
+            android:dialogTitle="请选择快门速度"
+            android:entries="@array/arrays_et"
+            android:entryValues="@array/arrays_et"
+            android:key="sp_pro_et"
+            android:summary="选择快门速度"
+            android:title="快门速度" />
+        <ListPreference
+            android:defaultValue="@string/pro_ev_0"
+            android:dialogTitle="请选曝光补偿"
+            android:entries="@array/arrays_ev"
+            android:entryValues="@array/arrays_ev"
+            android:key="sp_pro_ev"
+            android:summary="选择曝光补偿"
+            android:title="曝光补偿" />
+
+        <ListPreference
+            android:defaultValue="@string/pro_wb_auto"
+            android:dialogTitle="请选择白平衡"
+            android:entries="@array/arrays_wb"
+            android:entryValues="@array/arrays_wb"
+            android:key="sp_pro_wb"
+            android:summary="选择白平衡"
+            android:title="白平衡" />
+
+        <ListPreference
+            android:defaultValue="@string/pro_iso_auto"
+            android:dialogTitle="请选ISO(手动曝光时才生效)"
+            android:entries="@array/arrays_iso"
+            android:entryValues="@array/arrays_iso"
+            android:key="sp_pro_iso"
+            android:summary="选择ISO"
+            android:title="ISO" />
+
+        <ListPreference
+            android:defaultValue="@string/pro_anti_auto"
+            android:dialogTitle="选择抗频闪"
+            android:entries="@array/arrays_pro_anti"
+            android:entryValues="@array/arrays_pro_anti"
+            android:key="sp_pro_anti"
+            android:summary="选择抗频闪"
+            android:title="抗频闪" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

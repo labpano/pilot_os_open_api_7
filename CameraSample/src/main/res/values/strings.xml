@@ -1,0 +1,288 @@
+<resources>
+    <string name="app_name">prepare-pilot-open-api</string>
+
+    <string name="mode_photo">拍照</string>
+    <string name="mode_video_unstitch">录像</string>
+    <string name="mode_video_plane">平面视频</string>
+    <string name="mode_video_vlog">vlog</string>
+    <string name="mode_video_street">街景</string>
+    <string name="mode_video_timelapse">延时摄影</string>
+    <string name="mode_video_slow">慢动作</string>
+
+    <string-array name="arrays_camera_mode">
+        <item>@string/mode_photo</item>
+        <item>@string/mode_video_unstitch</item>
+        <item>@string/mode_video_plane</item>
+        <item>@string/mode_video_vlog</item>
+        <item>@string/mode_video_timelapse</item>
+    </string-array>
+
+    <string name="camera_resolution_12k">12K(11968*5984)</string>
+    <string name="camera_resolution_8k">8K(7680*3840)</string>
+    <string name="camera_resolution_5_7k">5.7K(5760*2880)</string>
+    <string name="camera_resolution_4k">4K(3840*1920)</string>
+    <string name="camera_resolution_2_5k">2.5K(2560*1280)</string>
+    <string-array name="arrays_camera_resolution_photo">
+        <item>@string/camera_resolution_12k</item>
+        <item>@string/camera_resolution_5_7k</item>
+    </string-array>
+
+    <string-array name="arrays_camera_resolution_video_un">
+        <item>@string/camera_resolution_8k</item>
+        <item>@string/camera_resolution_5_7k</item>
+        <item>@string/camera_resolution_4k</item>
+        <item>@string/camera_resolution_2_5k</item>
+    </string-array>
+
+    <string-array name="arrays_camera_resolution_video_plane">
+        <item>@string/camera_resolution_1080p</item>
+        <item>@string/camera_resolution_960p</item>
+        <item>@string/camera_resolution_720p</item>
+        <item>@string/camera_resolution_640p</item>
+    </string-array>
+
+    <string-array name="arrays_camera_resolution_video_vlog">
+        <item>@string/camera_resolution_4k</item>
+    </string-array>
+
+    <string-array name="arrays_camera_resolution_video_time">
+<!--        <item>@string/camera_resolution_8k</item>-->
+        <item>@string/camera_resolution_5_7k</item>
+    </string-array>
+
+    <string name="camera_fps_120">120</string>
+    <string name="camera_fps_60">60</string>
+    <string name="camera_fps_30">30</string>
+    <string name="camera_fps_10">10</string>
+    <string-array name="arrays_camera_fps">
+        <item>@string/camera_fps_120</item>
+        <item>@string/camera_fps_60</item>
+        <item>@string/camera_fps_30</item>
+        <item>@string/camera_fps_10</item>
+    </string-array>
+
+    <!-- 参考 com.pi.pano.annotation.PiExposureTime -->
+    <string name="pro_et_auto">0</string>
+    <string name="pro_et_3200">3200</string>
+    <string name="pro_et_2000">2000</string>
+    <string name="pro_et_1000">1000</string>
+    <string name="pro_et_500">500</string>
+    <string name="pro_et_250">250</string>
+    <string name="pro_et_120">120</string>
+    <string name="pro_et_100">100</string>
+    <string name="pro_et_60">60</string>
+    <string name="pro_et_15">15</string>
+    <string-array name="arrays_et">
+        <item>@string/pro_et_auto</item>
+        <item>@string/pro_et_3200</item>
+        <item>@string/pro_et_2000</item>
+        <item>@string/pro_et_1000</item>
+        <item>@string/pro_et_500</item>
+        <item>@string/pro_et_250</item>
+        <item>@string/pro_et_120</item>
+        <item>@string/pro_et_100</item>
+        <item>@string/pro_et_60</item>
+        <item>@string/pro_et_15</item>
+    </string-array>
+
+    <!-- 参考 com.pi.pano.annotation.PiExposureCompensation -->
+    <string name="pro_ev_4">-4</string>
+    <string name="pro_ev_3">-3</string>
+    <string name="pro_ev_2">-2</string>
+    <string name="pro_ev_1">-1</string>
+    <string name="pro_ev_0">0</string>
+    <string name="pro_ev_11">1</string>
+    <string name="pro_ev_21">2</string>
+    <string name="pro_ev_31">3</string>
+    <string name="pro_ev_41">4</string>
+    <string-array name="arrays_ev">
+        <item>@string/pro_ev_4</item>
+        <item>@string/pro_ev_3</item>
+        <item>@string/pro_ev_2</item>
+        <item>@string/pro_ev_1</item>
+        <item>@string/pro_ev_0</item>
+        <item>@string/pro_ev_11</item>
+        <item>@string/pro_ev_21</item>
+        <item>@string/pro_ev_31</item>
+        <item>@string/pro_ev_41</item>
+    </string-array>
+
+    <!-- 参考 com.pi.pano.annotation.PiIso -->
+    <string name="pro_iso_auto">0</string>
+    <string name="pro_iso_100">100</string>
+    <string name="pro_iso_200">200</string>
+    <string name="pro_iso_400">400</string>
+    <string name="pro_iso_600">600</string>
+    <string name="pro_iso_640">640</string>
+    <string name="pro_iso_800">800</string>
+    <string name="pro_iso_1000">1000</string>
+    <string name="pro_iso_1250">1250</string>
+    <string name="pro_iso_1600">1600</string>
+    <string name="pro_iso_3200">3200</string>
+    <string name="pro_iso_6400">6400</string>
+    <string-array name="arrays_iso">
+        <item>@string/pro_iso_auto</item>
+        <item>@string/pro_iso_100</item>
+        <item>@string/pro_iso_200</item>
+        <item>@string/pro_iso_400</item>
+        <item>@string/pro_iso_600</item>
+        <item>@string/pro_iso_640</item>
+        <item>@string/pro_iso_800</item>
+        <item>@string/pro_iso_1000</item>
+        <item>@string/pro_iso_1250</item>
+        <item>@string/pro_iso_1600</item>
+        <item>@string/pro_iso_3200</item>
+        <item>@string/pro_iso_6400</item>
+    </string-array>
+
+    <!-- 参考 com.pi.pano.annotation.PiWhiteBalance -->
+    <string name="pro_wb_auto">auto</string>
+    <string name="pro_wb_fluorescent">fluorescent</string>
+    <string name="pro_wb_incandescent">incandescent</string>
+    <string name="pro_wb_cloudy_daylight">cloudy-daylight</string>
+    <string name="pro_wb_daylight">daylight</string>
+    <string-array name="arrays_wb">
+        <item>@string/pro_wb_auto</item>
+        <item>@string/pro_wb_fluorescent</item>
+        <item>@string/pro_wb_incandescent</item>
+        <item>@string/pro_wb_cloudy_daylight</item>
+        <item>@string/pro_wb_daylight</item>
+    </string-array>
+
+    <string name="pro_anti_off">off</string>
+    <string name="pro_anti_50">50Hz</string>
+    <string name="pro_anti_60">60Hz</string>
+    <string name="pro_anti_auto">auto</string>
+    <string-array name="arrays_pro_anti">
+        <item>@string/pro_anti_auto</item>
+        <item>@string/pro_anti_off</item>
+        <item>@string/pro_anti_50</item>
+        <item>@string/pro_anti_60</item>
+    </string-array>
+
+    <string name="pro_plane_ratio_1">1:1</string>
+    <string name="pro_plane_ratio_16">16:9</string>
+    <string name="pro_plane_ratio_9">9:16</string>
+    <string-array name="arrays_plane_ratio">
+        <item>@string/pro_plane_ratio_1</item>
+        <item>@string/pro_plane_ratio_9</item>
+        <item>@string/pro_plane_ratio_16</item>
+    </string-array>
+
+    <string name="pro_plane_field_90">90</string>
+    <string name="pro_plane_field_120">120</string>
+    <string name="pro_plane_field_135">135</string>
+    <string name="pro_plane_field_150">150</string>
+    <string-array name="arrays_plane_field">
+        <item>@string/pro_plane_field_90</item>
+        <item>@string/pro_plane_field_120</item>
+        <item>@string/pro_plane_field_135</item>
+        <item>@string/pro_plane_field_150</item>
+    </string-array>
+
+    <string name="sp_live_url_1">rtmp://192.168.8.163:1936/live/210</string>
+
+    <string name="video_split_1">1</string>
+    <string name="video_split_2">2</string>
+    <string name="video_split_5">5</string>
+    <string name="video_split_10">10</string>
+    <string name="video_split_30">30</string>
+    <string-array name="arrays_video_split">
+        <item>@string/video_split_1</item>
+        <item>@string/video_split_2</item>
+        <item>@string/video_split_5</item>
+        <item>@string/video_split_10</item>
+        <item>@string/video_split_30</item>
+    </string-array>
+
+    <string name="timelapse_time_10">10</string>
+    <string name="timelapse_time_20">20</string>
+    <string name="timelapse_time_50">50</string>
+    <string name="timelapse_time_100">100</string>
+    <string name="timelapse_time_200">200</string>
+    <string name="timelapse_time_500">500</string>
+    <string name="timelapse_time_1000">1000</string>
+    <string name="timelapse_time_2000">2000</string>
+    <string name="timelapse_time_5000">5000</string>
+    <string name="timelapse_time_10000">10000</string>
+    <string-array name="arrays_timelapse_time">
+        <item>@string/timelapse_time_10</item>
+        <item>@string/timelapse_time_20</item>
+        <item>@string/timelapse_time_50</item>
+        <item>@string/timelapse_time_100</item>
+        <item>@string/timelapse_time_200</item>
+        <item>@string/timelapse_time_500</item>
+        <item>@string/timelapse_time_1000</item>
+        <item>@string/timelapse_time_2000</item>
+        <item>@string/timelapse_time_5000</item>
+        <item>@string/timelapse_time_10000</item>
+    </string-array>
+    <string name="timelapse_format">%s \n%s</string>
+
+    <string name="camera_resolution_1280p">1280P(2560*1280)</string>
+    <string name="camera_resolution_1080p">1080P(2160*1080)</string>
+    <string name="camera_resolution_960p">960P(1920*960)</string>
+    <string name="camera_resolution_720p">720P(1440*720)</string>
+    <string name="camera_resolution_640p">640P(1280*640)</string>
+    <string-array name="arrays_live_resolution">
+        <item>@string/camera_resolution_4k</item>
+        <item>@string/camera_resolution_1280p</item>
+        <item>@string/camera_resolution_1080p</item>
+        <item>@string/camera_resolution_960p</item>
+        <item>@string/camera_resolution_720p</item>
+        <item>@string/camera_resolution_640p</item>
+    </string-array>
+    <string-array name="arrays_live_resolution_plane">
+        <item>@string/camera_resolution_1080p</item>
+        <item>@string/camera_resolution_960p</item>
+        <item>@string/camera_resolution_720p</item>
+        <item>@string/camera_resolution_640p</item>
+    </string-array>
+
+    <string name="live_bitrate_30">30</string>
+    <string name="live_bitrate_15">15</string>
+    <string name="live_bitrate_12">12</string>
+    <string name="live_bitrate_10">10</string>
+    <string name="live_bitrate_8">8</string>
+    <string name="live_bitrate_6">6</string>
+    <string name="live_bitrate_5">5</string>
+    <string name="live_bitrate_4">4</string>
+    <string name="live_bitrate_3">3</string>
+    <string name="live_bitrate_2">2</string>
+
+    <string-array name="arrays_live_bitrate4k">
+        <item>@string/live_bitrate_30</item>
+        <item>@string/live_bitrate_15</item>
+        <item>@string/live_bitrate_12</item>
+        <item>@string/live_bitrate_10</item>
+        <item>@string/live_bitrate_8</item>
+        <item>@string/live_bitrate_6</item>
+    </string-array>
+
+    <string-array name="arrays_live_bitrate1280">
+        <item>@string/live_bitrate_8</item>
+        <item>@string/live_bitrate_6</item>
+        <item>@string/live_bitrate_5</item>
+        <item>@string/live_bitrate_4</item>
+    </string-array>
+
+    <string-array name="arrays_live_bitrate960">
+        <item>@string/live_bitrate_5</item>
+        <item>@string/live_bitrate_4</item>
+        <item>@string/live_bitrate_3</item>
+        <item>@string/live_bitrate_2</item>
+    </string-array>
+
+    <string-array name="arrays_live_bitrate720">
+        <item>@string/live_bitrate_5</item>
+        <item>@string/live_bitrate_4</item>
+        <item>@string/live_bitrate_3</item>
+        <item>@string/live_bitrate_2</item>
+    </string-array>
+
+    <string-array name="arrays_live_bitrate640">
+        <item>@string/live_bitrate_3</item>
+        <item>@string/live_bitrate_2</item>
+    </string-array>
+
+</resources>
